@@ -2,7 +2,7 @@
 
 A Windows tray utility. One global hotkey (default **Ctrl+Alt+B**) instantly blacks out every monitor and every RGB peripheral. Press it again and everything comes back exactly as it was.
 
-**[Download the latest release](https://github.com/venstreni/EasyBlackout/releases/latest)** (Windows 10/11 x64) · [spei.dev/easyblackout](https://spei.dev/easyblackout/)
+**[Download the latest release](https://github.com/speidev/EasyBlackout/releases/latest)** (Windows 10/11 x64) · [spei.dev/easyblackout](https://spei.dev/easyblackout/)
 
 ## What it controls
 
