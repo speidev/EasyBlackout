@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>EasyBlackout</RootNamespace>
+    <AssemblyName>EasyBlackout</AssemblyName>
+    <ApplicationIcon>Assets\EasyBlackout.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="H.NotifyIcon.Wpf" Version="2.3.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EasyBlackout.Core\EasyBlackout.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\EasyBlackout.ico" />
+    <Resource Include="Assets\EasyBlackoutActive.ico" />
+    <Resource Include="Assets\Logo.png" />
+    <!-- Vendor SDK DLLs stay next to the exe (not bundled into the single file) so they can be loaded natively. -->
+    <None Include="Assets\native\*.dll" Link="%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
+  </ItemGroup>
+</Project>
